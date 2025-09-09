@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Randomizer" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <title>Choice Randomizer 🎲</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  <main id="main-app">
+    <header>
+      <h1>Choice Randomizer <span aria-label="dice" role="img">🎲</span></h1>
+      <p>Add up to 50 choices, then let fate decide!</p>
+    </header>
+    <section id="input-section">
+      <form id="choice-form" autocomplete="off">
+        <input type="text" id="choice-input" maxlength="100" placeholder="Type your choice…" aria-label="Add a choice">
+        <button type="submit" id="add-btn" class="purple-btn">Add</button>
+      </form>
+      <button id="toggle-options" class="purple-btn" aria-expanded="false" aria-controls="options-rollup">Options</button>
+      <div id="options-rollup" class="options-rollup" hidden>
+        <div class="options-row">
+          <button id="import-btn" class="purple-btn small-btn">Import CSV</button>
+          <button id="export-btn" class="purple-btn small-btn">Export CSV</button>
+        </div>
+        <div class="options-row">
+          <label class="header-checkbox">
+            <input type="checkbox" id="csv-header" checked>
+            <span class="custom-checkbox"></span>
+            Include header
+          </label>
+        </div>
+        <div class="options-row">
+          <button id="clear-btn" class="purple-outline-btn destructive-btn" title="Remove all choices">CLEAR ALL</button>
+        </div>
+      </div>
+      <input type="file" id="csv-file" accept=".csv" style="display:none">
+    </section>
+    <section id="choices-section">
+      <ul id="choices-list" aria-live="polite"></ul>
+      <div id="maxed-msg" style="display:none">Maximum of 50 choices reached!</div>
+    </section>
+    <section id="randomize-section">
+      <button id="randomize-btn" class="randomize-btn purple-btn" disabled>Let Chaos Reign!</button>
+    </section>
+    <section id="carousel-section" hidden>
+      <div id="carousel-viewport" class="carousel-viewport">
+        <ul id="carousel-list" class="carousel-list"></ul>
+      </div>
+    </section>
+    <section id="winner-section" hidden>
+      <div class="winner-card">
+        <div class="winner-label">🎉 The Universe Has Decided 🎉</div>
+        <div id="winner-value" class="winner-value"></div>
+        <div class="winner-disclaimer"></div>
+        <div class="winner-actions">
+          <button id="spin-again-btn" class="purple-btn">Spin Again</button>
+          <button id="edit-btn" class="purple-outline-btn">Edit Choices</button>
+          <button id="result-export-btn" class="purple-btn small-btn">Export CSV</button>
+        </div>
+        <button id="toggle-history" class="purple-btn history-toggle-btn" aria-expanded="false" aria-controls="history-rollup">History</button>
+        <div id="history-rollup" class="history-rollup" hidden>
+          <div id="history-container" class="history-container"></div>
+          <button id="clear-history-btn" class="purple-outline-btn destructive-btn history-clear-btn" style="margin-top:1em;">Clear History</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <small> 😈 Made with extreme chaos energy.😈 </small>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
