@@ -55,7 +55,10 @@ const randomLabels = [
   "Hit Me With Chaos!",
   "Spin and Grin!",
   "Let the Universe Decide!",
-  "Go Bananas!"
+  "Go Bananas!",
+  "SLAM IT ON IN THERE!",
+  "Guess You'll Die?",
+  "Hey look over there!"
 ];
 
 const respinMessages = [
@@ -77,7 +80,7 @@ const respinMessages = [
 ];
 
 const firstSpinDisclaimer = `🤔 Not satisfied? <b>True randomness</b> is a cruel mistress.<br>
-Try again, but don’t tell the quantum gods.`;
+Spin Again, but don’t tell the quantum gods.`;
 
 function getRandomLabel() {
   return randomLabels[Math.floor(Math.random() * randomLabels.length)];
