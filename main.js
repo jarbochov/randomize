@@ -153,6 +153,10 @@ document.getElementById('choice-form').addEventListener('submit', e => {
   }
 });
 
+// Update Text Based On Variables
+document.getElementById('number-of-choices').textContent = MAX_CHOICES;
+
+
 // Remove choice (event delegation)
 choicesList.addEventListener('click', e => {
   if (e.target.classList.contains('remove-btn')) {
