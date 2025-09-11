@@ -267,7 +267,7 @@ function updateRandomizeLabel() {
 randomizeBtn.addEventListener('pointerenter', updateRandomizeLabel);
 randomizeBtn.addEventListener('focus', updateRandomizeLabel);
 toggleOptionsBtn.addEventListener('pointerenter', function() {
-  toggleOptionsBtn.style.transform = "scale(1.04) rotate(-2deg)";
+  toggleOptionsBtn.style.transform = "scale(1.00)";
   setTimeout(()=>toggleOptionsBtn.style.transform = "", 170);
 });
 

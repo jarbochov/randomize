@@ -161,6 +161,7 @@ header p {
 #toggle-options, .history-toggle-btn {
   margin-top: 0.8em;
   width: 100%;
+  padding: 5px;
 }
 
 .options-rollup, .history-rollup {
@@ -376,7 +377,7 @@ footer {
 
 /* Winner disclaimer (timeline/respins message) as a distinct row */
 .winner-disclaimer {
-  font-size: 1.08em;
+  font-size: .8em;
   color: #8650b6;
   background: #f1ebff;
   border-radius: 0.7em;
@@ -408,8 +409,8 @@ footer {
 }
 
 .history-container {
+  width: 90%;
   margin-top: 0.4em;
-  text-align: left;
   font-size: 0.97em;
   color: #a084ee;
   background: #f1ebff;
