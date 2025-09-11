@@ -58,7 +58,8 @@ const randomLabels = [
   "Go Bananas!",
   "SLAM IT ON IN THERE!",
   "Guess You'll Die?",
-  "Hey look over there!"
+  "Hey look over there!",
+  "What does this button do?"
 ];
 
 const respinMessages = [
