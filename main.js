@@ -59,6 +59,9 @@ const randomLabels = [
   "SLAM IT ON IN THERE!",
   "Guess You'll Die?",
   "Hey look over there!",
+  "LET IT BURN",
+  "Punch it Margaret!",
+  "What's the Worst That Could Happen?"
 ];
 
 const respinMessages = [
