@@ -307,7 +307,7 @@ footer {
 }
 
 .carousel-viewport {
-  width: 100%;
+  width: 96%;
   max-width: 340px;
   margin: 2em auto 1em auto;
   height: 10.5em;
@@ -499,7 +499,7 @@ footer {
     padding: 0.7em 0.1em;
   }
   .carousel-viewport, .winner-card {
-    max-width: 96vw;
+    max-width: 92vw;
     min-width: 0;
     padding-left: 0.3em;
     padding-right: 0.3em;
